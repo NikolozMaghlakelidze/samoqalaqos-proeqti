@@ -1,0 +1,119 @@
+.card32 {
+    width: 500px;
+    height: 400px;
+    perspective: 1000px;
+    margin-left: 450px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
+  
+  .card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.999s;
+  }
+  
+  .card32:hover .card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .card-front,
+  .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+  .card-front {
+    background-color: #6A2C70;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    border: 10px solid #6A2C70;
+    border-radius: 10px;
+    justify-content: center;
+    font-size: 24px;
+    transform: rotateY(0deg);
+  }
+  
+  .card-back {
+    background-color: #F08A5D;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    border: 10px solid #F08A5D;
+    border-radius: 10px;
+    justify-content: center;
+    font-size: 24px;
+    transform: rotateY(180deg);
+  }
+  .header3{
+    width: 100%;
+    height: 190px;
+    background: linear-gradient(to top, rgb(74, 165, 193), rgb(78, 224, 81));
+   }
+   .text2{
+font-size: 17px;
+   }
+
+   .page {
+    position: relative;
+    box-sizing: border-box;
+    max-width: 500px;
+    height: 330px;
+    font-family: cursive;
+    font-size: 20px;
+    border-radius: 10px;
+    background: #fff;
+    background-image: linear-gradient(#f5f5f0 1.1rem, #ccc 1.2rem);
+    background-size: 100% 1.2rem;
+    line-height: 1.2rem;
+    padding: 1.4rem 0.5rem 0.3rem 4.5rem;
+    margin-left: 400px;
+  }
+  
+  .page::before,
+  .page::after {
+    position: absolute;
+    content: "";
+    bottom: 10px;
+    width: 40%;
+    height: 10px;
+    box-shadow: 0 5px 14px rgba(0, 0, 0, 0.7);
+    z-index: -1;
+    transition: all 0.3s ease;
+  }
+  
+  .page::before {
+    left: 15px;
+    transform: skew(-5deg) rotate(-5deg);
+  }
+  
+  .page::after {
+    right: 15px;
+    transform: skew(5deg) rotate(5deg);
+  }
+  
+  .page:hover::before,
+  .page:hover::after {
+    box-shadow: 0 2px 14px rgba(0, 0, 0, 0.4);
+  }
+  
+  .margin {
+    position: absolute;
+    border-left: 1px solid #d88;
+    height: 100%;
+    left: 3.3rem;
+    top: 0;
+  }
+  
+  .page p {
+    margin: 0;
+    text-indent: 1rem;
+    padding-bottom: 1.2rem;
+    color: black;
+    line-height: 20px;
+  }
