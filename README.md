@@ -1,0 +1,2 @@
+# samoqalaqos-proeqti
+project
